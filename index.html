@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ACHILLES</title>
+<meta http-equiv="refresh" content="0;url=https://trucks-wins-qualities-saint.trycloudflare.com" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{min-height:100vh;display:grid;place-items:center;font-family:"JetBrains Mono",monospace;color:#E9E5DC;
+    background:linear-gradient(130deg,#07110b,#0c2017,#0a1a12,#13361f,#0a160f,#0e271b,#081410,#0f3020);
+    background-size:300% 300%;animation:flow 22s ease-in-out infinite;text-align:center;padding:24px}
+  @keyframes flow{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+  .card{display:flex;flex-direction:column;align-items:center;gap:8px}
+  .shield{width:96px;height:96px;color:#86C28F;filter:drop-shadow(0 0 22px rgba(134,194,143,.45));margin-bottom:6px}
+  h1{font-family:"Fraunces",serif;font-weight:600;font-size:3rem;letter-spacing:.06em;color:#E9E5DC}
+  .sub{color:#A8A498;font-size:.82rem;letter-spacing:.18em;text-transform:uppercase;margin-top:2px}
+  .spinner{width:30px;height:30px;border-radius:50%;border:2px solid rgba(134,194,143,.25);border-top-color:#86C28F;animation:spin 1s linear infinite;margin:20px 0 6px}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  a{margin-top:14px;color:#C8A86A;text-decoration:none;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;border:1px solid #2a2e37;border-radius:10px;padding:11px 18px;transition:border-color .2s,color .2s}
+  a:hover{border-color:#C8A86A;color:#E9E5DC}
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="shield"><svg viewBox="0 0 24 24" fill="none" width="96" height="96"><path d="M12 2l9 3.4v6.2c0 5.6-3.9 9.5-9 11.4-5.1-1.9-9-5.8-9-11.4V5.4z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/><path d="M8 12l2.6 2.6L16.5 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <h1>ACHILLES</h1>
+    <div class="sub">Kobler til sikker tilkobling…</div>
+    <div class="spinner"></div>
+    <a id="lnk" href="https://trucks-wins-qualities-saint.trycloudflare.com">Åpne manuelt →</a>
+  </div>
+<script>
+  var TARGET = "https://trucks-wins-qualities-saint.trycloudflare.com";
+  document.getElementById("lnk").href = TARGET;
+  setTimeout(function(){ location.replace(TARGET); }, 400);
+</script>
+</body>
+</html>
